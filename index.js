@@ -1,10 +1,7 @@
-document.querySelector('main').remove();
+document.getElementById("main").remove();
 
-const newHeader = document.createElement('h1');
+const newHeader = document.createElement("h1");
+newHeader.id = "victory";
 
-newHeader.id = 'victory'
-
-newHeader.textContent = "YOUR-NAME is the champion";
-
+newHeader.innerHTML = "Ali is the champion";
 document.body.append(newHeader);
-
